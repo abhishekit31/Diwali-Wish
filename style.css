@@ -12,6 +12,8 @@ body {
     text-align: center;
     max-width: 650px;
     margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 h1 {
     font-size: 5rem;
@@ -50,11 +52,22 @@ h1 {
     font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
+    margin-top: 20px;
+}
+.thank-you {
+    font-size: 5rem;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(135deg, #074fbb, #ee2c05, #074fbb, #ff1515); 
+    /* Clips the background to the text */
+   -webkit-background-clip: text; 
+   color: transparent; 
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
     h1 {
-        font-size: 3rem; /* Reduce the font size for smaller screens */
+        font-size: 5rem; /* Reduce the font size for smaller screens */
     }
     .message {
         font-size: 1.2rem; /* Smaller font size for the message */
@@ -62,6 +75,9 @@ h1 {
     #revealMessage {
         font-size: 0.9rem; /* Smaller font size for the button */
         padding: 8px 16px; /* Adjust padding */
+    }
+    .thank-you {
+        font-size: 2.5rem;
     }
 }
 
@@ -76,6 +92,9 @@ h1 {
         font-size: 0.8rem; /* Even smaller button font size */
         padding: 6px 12px; /* Adjust padding */
     }
+    .thank-you {
+        font-size: 3rem;
+    }
 }
 
 @keyframes pulse {
@@ -85,4 +104,8 @@ h1 {
     50% {
         transform: scale(1.1);
     }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
