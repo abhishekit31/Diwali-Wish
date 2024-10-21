@@ -33,7 +33,16 @@ h1 {
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
+    line-height: 1.5;
 }
+.regard {
+    font-weight: bold; 
+}
+.highlight {
+    color: #2d068d; 
+    font-weight: bold; 
+}
+
 #revealMessage{
     background: linear-gradient(135deg, #000306, #ee2c05, #000f0e, #e80606);
     color: white;
@@ -43,6 +52,37 @@ h1 {
     border-radius: 10px;
     cursor: pointer;
 }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem; /* Reduce the font size for smaller screens */
+    }
+
+    .message {
+        font-size: 1.2rem; /* Smaller font size for the message */
+    }
+
+    #revealMessage {
+        font-size: 0.9rem; /* Smaller font size for the button */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Further reduce for very small screens */
+    }
+
+    .message {
+        font-size: 1rem; /* Further reduce the message font size */
+    }
+
+    #revealMessage {
+        font-size: 0.8rem; /* Even smaller button font size */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}
+
 @keyframes pulse {
     0%, 100% {
         transform: scale(1);
