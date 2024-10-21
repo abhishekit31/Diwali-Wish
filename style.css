@@ -21,14 +21,13 @@ h1 {
     background: linear-gradient(135deg, #074fbb, #ee2c05, #074fbb, #ff1515); 
      /* Clips the background to the text */
     -webkit-background-clip: text; 
-    color: transparent;   
-     
+    color: transparent;      
 }
 .message {
     font-size: 1.5rem;
     margin-top: 20px;
     /*Multi-color gradient */
-    background: linear-gradient(135deg, #0a0a0afa, #d8063e, #d8063e, #00060c); 
+    background: linear-gradient(135deg, #0a0a0afa, #d8063e, #3b2b7b, #d8063e); 
      /* Clips the background to the text */
     -webkit-background-clip: text;
     color: transparent;
@@ -36,13 +35,13 @@ h1 {
     line-height: 1.5;
 }
 .regard {
+    color: #000306;
     font-weight: bold; 
 }
 .highlight {
-    color: #2d068d; 
+    color: rgb(8, 13, 151); 
     font-weight: bold; 
 }
-
 #revealMessage{
     background: linear-gradient(135deg, #000306, #ee2c05, #000f0e, #e80606);
     color: white;
@@ -57,11 +56,9 @@ h1 {
     h1 {
         font-size: 3rem; /* Reduce the font size for smaller screens */
     }
-
     .message {
         font-size: 1.2rem; /* Smaller font size for the message */
     }
-
     #revealMessage {
         font-size: 0.9rem; /* Smaller font size for the button */
         padding: 8px 16px; /* Adjust padding */
@@ -72,11 +69,9 @@ h1 {
     h1 {
         font-size: 2.5rem; /* Further reduce for very small screens */
     }
-
     .message {
         font-size: 1rem; /* Further reduce the message font size */
     }
-
     #revealMessage {
         font-size: 0.8rem; /* Even smaller button font size */
         padding: 6px 12px; /* Adjust padding */
