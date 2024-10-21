@@ -19,7 +19,6 @@ h1 {
     animation: pulse 2s infinite;
     /* Multi-color gradient */
     background: linear-gradient(135deg, #074fbb, #ee2c05, #074fbb, #ff1515); 
-    /* background: linear-gradient(135deg, #074fbb, #ee2c05, #00ffea, #6600ff);  */
      /* Clips the background to the text */
     -webkit-background-clip: text; 
     color: transparent;   
