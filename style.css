@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(Image/diwali.jpg);
+    background-size: cover;
+}
+.container {
+    text-align: center;
+    max-width: 650px;
+    margin: 20px;
+}
+h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+    /* Multi-color gradient */
+    background: linear-gradient(135deg, #074fbb, #ee2c05, #074fbb, #ff1515); 
+    /* background: linear-gradient(135deg, #074fbb, #ee2c05, #00ffea, #6600ff);  */
+     /* Clips the background to the text */
+    -webkit-background-clip: text; 
+    color: transparent;   
+     
+}
+.message {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    /*Multi-color gradient */
+    background: linear-gradient(135deg, #0a0a0afa, #d8063e, #d8063e, #00060c); 
+     /* Clips the background to the text */
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+#revealMessage{
+    background: linear-gradient(135deg, #000306, #ee2c05, #000f0e, #e80606);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
