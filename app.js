@@ -16,5 +16,5 @@ function revelmessage(button){
     setTimeout(() => {
         container.innerHTML = `<h1 class="thank-you">Thank you! </h1>`;
         music.pause();
-    }, 30000);
+    }, 20000);
 }
